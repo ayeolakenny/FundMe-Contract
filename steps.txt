@@ -1,0 +1,21 @@
+STEPS
+- yarn init -y ( create package.json file)
+- yarn add -D hardhat (add harhat to your project)
+- yarn hardhat (create sample boiler plate)
+
+DEPLOYMENT
+- delete deploy file under scripts
+- yarn add hardhat-deploy
+- import hardhat-deploy to your harhat.config.ts file
+- yarn hardhat (you should see a deploy task there)
+- create a deploy folder for youer deployment
+- yarn add -D @nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers ethers (overite @nomiclabs/ha.... with harhat-deploy ethers)
+- create a file under deploy ie 01-deploy-fund-me.ts and write your deploy script
+
+TIPS AND NOTES
+- solhint helps us lint solidity code (yarn solhint contracts/*.sol)
+
+COMMANDS
+- yarn hardhat test -> run tests
+- yarn hardhat coverage -> check your test coverage
+- yarn hardhat test --grep <snipper of the it> ie "funder to array" -> run a specific test
